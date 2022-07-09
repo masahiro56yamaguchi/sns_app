@@ -1,0 +1,100 @@
+#shares {
+    .section-title {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin: 20px 0;
+        .share-btn {
+            padding: 12px;
+            font-size: 1.4rem;
+            color: #808000;
+            background-color: #FFFFE0;
+            border-radius: 10px;
+        }
+    }
+
+    .post-wrapper {
+        background-color: #FFFFE0;
+        margin: 20px 0;
+        padding: 2%;
+        border-radius: 10px;
+        width: 800px;
+       
+        .post {
+            display: flex;
+            margin-left: 35px;
+            background-color:  #FFE4B5;
+            border-radius: 10px;
+            width: 700px;
+            margin-bottom: 10px;
+            padding: 2%;
+            .restaurant-img {
+                border-radius: 10px;
+                margin-left: 30px;
+                width: 200px;
+                height: 200px;
+            }
+
+            .post-info {
+                background-color: #FFFFE0;
+                border-radius: 10px;
+                width: 400px;
+                height: 200px;
+                margin: 0 30px;
+            }
+
+            .store-name {
+                margin-top: 10px;
+                font-weight: bold;
+            }
+
+            .review {
+                margin-top: 10px;
+                margin-left: 15px;
+                background-color: #FFE4B5;
+                border-radius: 10px;
+                width: 350px;
+                height: 120px;
+                text-align: left;
+                padding: 2%;
+            }
+            
+        }
+    }
+
+    .comment-wrapper {
+        display: flex;
+        .comment-btn {
+            color: #808000;
+            background-color:  #FFFFE0;
+            border: none;
+            border-radius: 10px;
+            padding: 12px;
+            margin-left: 30px;
+            height: 50px;
+            margin-top: 70px;
+        }
+    }
+
+    .comment-form {
+        background-color: #FFFFFF;
+        margin-bottom: 20px;
+        margin-left: 80px;
+        padding: 2%;
+        border-radius: 10px;
+        border: none;
+        width: 600px;
+        height: 200px;
+    }
+
+    .comment-text {
+        background-color:  #FFFFE0;
+        margin-bottom: 20px;
+        margin-left: 55px;
+        padding: 2%;
+        border-radius: 10px;
+        border: none;
+        width: 650px;
+        height: 250px;
+    }
+}

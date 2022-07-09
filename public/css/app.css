@@ -1,0 +1,560 @@
+@import url(https://fonts.googleapis.com/css?family=Nunito);
+html {
+  font-size: 62.5%;
+}
+
+* {
+  line-height: 1.5;
+  margin: 0;
+  padding: 0;
+  color: #808000;
+  box-sizing: border-box;
+}
+
+body {
+  font-size: 1.6rem;
+  background-color: #FFE4B5;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+main {
+  padding-top: 75px;
+  flex: 1;
+  display: flex;
+  justify-content: center;
+}
+
+h1 {
+  font-size: 3rem;
+  font-weight: bold;
+}
+
+h2 {
+  font-size: 4rem;
+  font-weight: bold;
+}
+
+h3 {
+  font-size: 3rem;
+  font-weight: bold;
+}
+
+a {
+  text-decoration: none;
+}
+
+button {
+  cursor: pointer;
+}
+
+#login {
+  background-color: #FFFFE0;
+  margin: 20px 0;
+  padding: 5%;
+  border-radius: 10px;
+}
+#login .email-form, #login #user-update .verify-form, #user-update #login .verify-form, #login #register .name-form, #register #login .name-form, #login .password-form {
+  display: block;
+  width: 360px;
+  height: 60px;
+  background-color: #FFE4B5;
+  border-radius: 10px;
+  border: none;
+  padding: 8px;
+  margin-top: 30px;
+}
+#login .login-btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #808000;
+  background-color: #FFE4B5;
+  width: 360px;
+  height: 60px;
+  border: none;
+  border-radius: 10px;
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+
+#register {
+  background-color: #FFFFE0;
+  margin: 30px 0;
+  padding: 5%;
+  border-radius: 10px;
+}
+#register .email-form, #register #user-update .verify-form, #user-update #register .verify-form, #register .name-form, #register .password-form {
+  display: block;
+  width: 360px;
+  height: 60px;
+  background-color: #FFE4B5;
+  border-radius: 10px;
+  border: none;
+  padding: 8px;
+  margin-top: 30px;
+}
+#register .register-btn, #register #welcome .login-btn, #welcome #register .login-btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #808000;
+  background-color: #FFE4B5;
+  width: 360px;
+  height: 60px;
+  border: none;
+  border-radius: 10px;
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+
+#welcome {
+  margin: auto 0;
+}
+#welcome p {
+  font-size: 1.6rem;
+  color: gray;
+  margin-top: 10px;
+}
+#welcome .register-btn, #welcome .login-btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #808000;
+  background-color: #FFFFE0;
+  border-radius: 10px;
+  width: 360px;
+  height: 60px;
+  margin: auto;
+  margin-top: 30px;
+}
+header {
+  padding: 30px 8% 30px;
+  width: 100%;
+  height: 75px;
+  display: flex;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  background-color: #FFFFE0;
+}
+header p {
+  font-size: 4rem;
+}
+
+footer {
+  width: 100%;
+  height: 75px;
+  background-color: #FFFFE0;
+}
+footer p {
+  margin-top: 40px;
+  font-size: 1.7rem;
+}
+
+#shares .section-title {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 20px 0;
+}
+#shares .section-title .share-btn {
+  padding: 12px;
+  font-size: 1.4rem;
+  color: #808000;
+  background-color: #FFFFE0;
+  border-radius: 10px;
+}
+#shares .post-wrapper {
+  background-color: #FFFFE0;
+  margin: 20px 0;
+  padding: 2%;
+  border-radius: 10px;
+  width: 800px;
+}
+#shares .post-wrapper .post {
+  display: flex;
+  margin-left: 35px;
+  background-color: #FFE4B5;
+  border-radius: 10px;
+  width: 700px;
+  margin-bottom: 10px;
+  padding: 2%;
+}
+#shares .post-wrapper .post .restaurant-img {
+  border-radius: 10px;
+  margin-left: 30px;
+  width: 200px;
+  height: 200px;
+}
+#shares .post-wrapper .post .post-info {
+  background-color: #FFFFE0;
+  border-radius: 10px;
+  width: 400px;
+  height: 200px;
+  margin: 0 30px;
+}
+#shares .post-wrapper .post .store-name {
+  margin-top: 10px;
+  font-weight: bold;
+}
+#shares .post-wrapper .post .review {
+  margin-top: 10px;
+  margin-left: 15px;
+  background-color: #FFE4B5;
+  border-radius: 10px;
+  width: 350px;
+  height: 120px;
+  text-align: left;
+  padding: 2%;
+}
+#shares .btn-wrapper {
+  display: flex;
+  justify-content: right;
+}
+#shares .btn-wrapper .comment-btn {
+  color: #808000;
+  background-color: #FFE4B5;
+  border: none;
+  border-radius: 10px;
+  padding: 12px;
+  margin-right: 20px;
+}
+#shares .btn-wrapper .edit-btn {
+  color: #808000;
+  background-color: #FFE4B5;
+  border: none;
+  border-radius: 10px;
+  padding: 12px;
+  margin-right: 20px;
+}
+#shares .btn-wrapper .delete-btn {
+  color: #808000;
+  background-color: #FFE4B5;
+  border: none;
+  border-radius: 10px;
+  padding: 12px;
+}
+#shares .logout {
+  margin: 30px 0;
+}
+#shares .logout .logout-btn {
+  color: #808000;
+  background-color: #FFFFE0;
+  border: none;
+  border-radius: 10px;
+  padding: 12px;
+}
+
+#post {
+  width: 500px;
+}
+#post .store-form {
+  width: 100%;
+  max-height: 30px;
+  border: none;
+  border-radius: 10px;
+  outline: none;
+  padding: 20px;
+  margin-bottom: 20px;
+  margin-top: 20px;
+}
+#post .dish-form {
+  width: 100%;
+  max-height: 30px;
+  border: none;
+  border-radius: 10px;
+  outline: none;
+  padding: 20px;
+  margin-bottom: 20px;
+}
+#post #restaurant-img {
+  border-radius: 10px;
+  margin-left: 30px;
+  width: 200px;
+  height: 200px;
+  background-color: #ddd;
+}
+#post .body-form {
+  width: 100%;
+  min-height: 100px;
+  border: none;
+  border-radius: 10px;
+  outline: none;
+  padding: 20px;
+  margin-top: 20px;
+}
+#post .btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 20px 0;
+}
+#post .btn .cancel-btn, #post #edit .btn .update-btn, #edit #post .btn .update-btn, #post .btn .post-btn {
+  padding: 12px;
+  font-size: 1.4rem;
+  color: #808000;
+  background-color: #FFFFE0;
+  border-radius: 10px;
+  border: none;
+  margin-right: 20px;
+}
+#edit {
+  width: 500px;
+}
+#edit .btn-wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 30px;
+}
+#edit .btn-wrapper .updated-at {
+  color: #808000;
+}
+#edit .btn-wrapper .delete-btn {
+  padding: 12px;
+  font-size: 1.4rem;
+  color: #808000;
+  background-color: #FFFFE0;
+  border-radius: 10px;
+  border: none;
+}
+#edit .store-form {
+  width: 100%;
+  max-height: 30px;
+  border: none;
+  border-radius: 10px;
+  outline: none;
+  padding: 20px;
+  margin-bottom: 20px;
+}
+#edit .dish-form {
+  width: 100%;
+  max-height: 30px;
+  border: none;
+  border-radius: 10px;
+  outline: none;
+  padding: 20px;
+  margin-bottom: 20px;
+}
+#edit #restaurant-img {
+  border-radius: 10px;
+  margin-left: 30px;
+  width: 200px;
+  height: 200px;
+}
+#edit .body-form {
+  width: 100%;
+  min-height: 100px;
+  border: none;
+  border-radius: 10px;
+  outline: none;
+  padding: 20px;
+  margin-top: 20px;
+}
+#edit .btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 20px 0;
+}
+#edit .btn .cancel-btn, #edit .btn .update-btn, #edit #post .btn .post-btn, #post #edit .btn .post-btn {
+  padding: 12px;
+  font-size: 1.4rem;
+  color: #808000;
+  background-color: #FFFFE0;
+  border-radius: 10px;
+  border: none;
+  margin-right: 20px;
+}
+#mypages {
+  width: 500px;
+}
+#mypages .section-title {
+  padding: 12px;
+  font-size: 1.4rem;
+  color: #808000;
+  background-color: #FFFFE0;
+  border-radius: 10px;
+  margin-top: 30px;
+  margin-bottom: 40px;
+}
+#mypages .title-block {
+  width: 300px;
+  padding: 12px;
+  font-size: 1.4rem;
+  color: #808000;
+  background-color: #FFFFE0;
+  border-radius: 10px;
+  margin-top: 30px;
+  margin-left: 100px;
+  margin-bottom: 40px;
+}
+#mypages .user-info {
+  background-color: #FFFFE0;
+  margin: 20px 0;
+  padding: 5%;
+  border-radius: 10px;
+  height: 270px;
+}
+#mypages .user-info .user-name-block, #mypages .user-info .user-email-block {
+  margin-top: 20px;
+}
+#mypages .user-info .info-title {
+  font-size: 2.3rem;
+  font-weight: bold;
+}
+#mypages .user-info .user-name {
+  font-size: 2rem;
+}
+#mypages .user-info .user-email {
+  font-size: 2rem;
+}
+#mypages .edit-btn {
+  background-color: #FFFFE0;
+  margin: 20px 0;
+  padding: 5px;
+  border-radius: 10px;
+}
+
+#user-update {
+  background-color: #FFFFE0;
+  margin: 20px 0;
+  padding: 5%;
+  border-radius: 10px;
+}
+#user-update .email-form, #user-update .verify-form, #user-update .password-form, #user-update #register .name-form, #register #user-update .name-form {
+  display: block;
+  width: 360px;
+  height: 60px;
+  background-color: #FFE4B5;
+  border-radius: 10px;
+  border: none;
+  padding: 8px;
+  margin-top: 30px;
+}
+#user-update .login-btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #808000;
+  background-color: #FFE4B5;
+  width: 360px;
+  height: 60px;
+  border: none;
+  border-radius: 10px;
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+
+.title-block {
+  width: 300px;
+  padding: 12px;
+  font-size: 1.4rem;
+  color: #808000;
+  background-color: #FFFFE0;
+  border-radius: 10px;
+  margin-top: 30px;
+  margin-left: 250px;
+  margin-bottom: 40px;
+}
+
+.toukou {
+  background-color: #FFFFE0;
+  margin: 20px 0;
+  padding: 5%;
+  border-radius: 10px;
+  width: 800px;
+}
+
+#shares .section-title {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 20px 0;
+}
+#shares .section-title .share-btn {
+  padding: 12px;
+  font-size: 1.4rem;
+  color: #808000;
+  background-color: #FFFFE0;
+  border-radius: 10px;
+}
+#shares .post-wrapper {
+  background-color: #FFFFE0;
+  margin: 20px 0;
+  padding: 2%;
+  border-radius: 10px;
+  width: 800px;
+}
+#shares .post-wrapper .post {
+  display: flex;
+  margin-left: 35px;
+  background-color: #FFE4B5;
+  border-radius: 10px;
+  width: 700px;
+  margin-bottom: 10px;
+  padding: 2%;
+}
+#shares .post-wrapper .post .restaurant-img {
+  border-radius: 10px;
+  margin-left: 30px;
+  width: 200px;
+  height: 200px;
+}
+#shares .post-wrapper .post .post-info {
+  background-color: #FFFFE0;
+  border-radius: 10px;
+  width: 400px;
+  height: 200px;
+  margin: 0 30px;
+}
+#shares .post-wrapper .post .store-name {
+  margin-top: 10px;
+  font-weight: bold;
+}
+#shares .post-wrapper .post .review {
+  margin-top: 10px;
+  margin-left: 15px;
+  background-color: #FFE4B5;
+  border-radius: 10px;
+  width: 350px;
+  height: 120px;
+  text-align: left;
+  padding: 2%;
+}
+#shares .comment-wrapper {
+  display: flex;
+}
+#shares .comment-wrapper .comment-btn {
+  color: #808000;
+  background-color: #FFFFE0;
+  border: none;
+  border-radius: 10px;
+  padding: 12px;
+  margin-left: 30px;
+  height: 50px;
+  margin-top: 70px;
+}
+#shares .comment-form {
+  background-color: #FFFFFF;
+  margin-bottom: 20px;
+  margin-left: 80px;
+  padding: 2%;
+  border-radius: 10px;
+  border: none;
+  width: 600px;
+  height: 200px;
+}
+#shares .comment-text {
+  background-color: #FFFFE0;
+  margin-bottom: 20px;
+  margin-left: 55px;
+  padding: 2%;
+  border-radius: 10px;
+  border: none;
+  width: 650px;
+  height: 250px;
+}

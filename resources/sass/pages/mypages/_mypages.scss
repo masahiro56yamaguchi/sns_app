@@ -1,0 +1,58 @@
+#mypages {
+    width: 500px;
+    .section-title {
+        padding: 12px;
+        font-size: 1.4rem;
+        color: #808000;
+        background-color: #FFFFE0;
+        border-radius: 10px;
+        margin-top: 30px;
+        margin-bottom: 40px;
+    }
+
+    .title-block {
+        width: 300px;
+        padding: 12px;
+        font-size: 1.4rem;
+        color: #808000;
+        background-color: #FFFFE0;
+        border-radius: 10px;
+        margin-top: 30px;
+        margin-left: 100px;
+        margin-bottom: 40px;
+    }
+
+    .user-info {
+        background-color: #FFFFE0;
+        margin: 20px 0;
+        padding: 5%;
+        border-radius: 10px;
+        height: 270px;
+        .user-name-block {
+            margin-top: 20px;
+        }
+        .user-email-block {
+            @extend .user-name-block
+        }
+
+        .info-title {
+            font-size: 2.3rem;
+            font-weight: bold;
+        }
+
+        .user-name {
+            font-size: 2rem;
+        }
+
+        .user-email {
+            font-size: 2rem;
+        }
+    }
+
+    .edit-btn {
+        background-color: #FFFFE0;
+        margin: 20px 0;
+        padding: 5px;
+        border-radius: 10px;
+    }
+}

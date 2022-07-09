@@ -1,0 +1,38 @@
+#register {
+    background-color: #FFFFE0;
+    margin: 30px 0;
+    padding: 5%;
+    border-radius: 10px;
+    .email-form {
+        display: block;
+        width: 360px;
+        height: 60px;
+        background-color: #FFE4B5;
+        border-radius: 10px;
+        border: none;
+        padding: 8px;
+        margin-top: 30px;
+    }
+    .password-form {
+        @extend .email-form;
+    }
+    .name-form {
+        @extend .email-form;
+    }
+
+    
+
+    .register-btn {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: #808000;
+        background-color: #FFE4B5;
+        width: 360px;
+        height: 60px;
+        border: none;
+        border-radius: 10px;
+        margin-top: 30px;
+        margin-bottom: 30px;
+    }
+}

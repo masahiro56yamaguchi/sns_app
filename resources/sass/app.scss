@@ -1,0 +1,47 @@
+// Fonts
+@import url('https://fonts.googleapis.com/css?family=Nunito');
+
+// Variables
+@import 'variables';
+
+// Bootstrap
+// @import '~bootstrap/scss/bootstrap';
+
+// グローバルCSS
+@import 'global';
+
+// ログインページ
+@import 'pages/auth/login';
+
+// 登録ページ
+@import 'pages/auth/register';
+
+// 訪問ページ
+@import 'pages/welcome';
+
+//　ヘッダー
+@import 'parts/header';
+
+// フッター
+@import 'parts/footer';
+
+// 投稿一覧ページ(ホーム画面)
+@import 'pages/shares/shares';
+
+// 投稿ページ
+@import 'pages/shares/post';
+
+// 投稿編集ページ
+@import 'pages/shares/edit';
+
+// マイページ
+@import 'pages/mypages/mypages';
+
+// ユーザー情報編集ページ
+@import 'pages/mypages/edit';
+
+// 過去の投稿ページ
+@import 'pages/mypages/post';
+
+// コメントページ
+@import 'pages/comments/comments';
